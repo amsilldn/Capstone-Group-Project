@@ -1,0 +1,6 @@
+CONVERSION
+Employee (empID, firstName, lastName, position)
+Equipment (equipID, type, size, quantity)
+checkoutLog(equipID>, empID>, event, quantityOut, checkoutDate, checkinDate, hasEar)
+lostLog(equipID>, empID>, reportDate, foundDate, quantityLost)
+damagedLog(equipID>, empID>, reportDate, sentDate, recievedDate, quantityDamaged)

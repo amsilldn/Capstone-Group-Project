@@ -1,0 +1,848 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+
+.nobr {
+    white-space: nowrap;
+}
+
+/* main */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Arial", sans-serif;
+}
+
+#main {
+    /* box-sizing: border-box; */
+    min-height: 75.7vh;
+    overflow:hidden;
+    display: block;
+    /* padding: 0 0 100px; */
+    position: relative;
+    /* height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px; */
+    padding-bottom: 50px;
+}
+
+/* login page */
+.login_page {
+    /* background image from shutterstock */
+    background-image: url("../images/laptop_phone_stock.png");
+    background-size: cover;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000000;
+}
+
+#align_login {
+    height:90px;
+    width: 300px;
+}
+
+.top {
+    width: 40%;
+    height: 400px;
+    background-color: #791C17;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    opacity: 0.9;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slogan {
+    color: #FFFFFF;
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.align {
+    margin-top: 70px;
+}
+
+.signin {
+    padding-top: 10px;
+}
+
+/* other pages */
+/* header */
+
+header {
+    background: #791C17;
+    color: white;
+    font-size: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 100;
+    line-height: .05em;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+#align_logo {
+    height: 100px;
+    width: 300px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+.logout {
+    font-size: 16px;
+    width: inherit;
+    height: 18px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.logout a {
+    margin-right: 10px;
+}
+
+/* navigation */
+
+nav {
+    background: #991B1E;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 70px;
+    /* margin-top: 150px; */
+    z-index: 200;
+    position: fixed;
+    top: 150px;
+    left: 0;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.closebtn {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.nav_ul {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+nav li {
+    margin-top: 5px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+a.active {
+    color: #991B1E;
+    background: white;
+    /* color: #818181; */
+    /* text-decoration: underline; */
+    height: 136%;
+    width: 240%;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: -20px;
+}
+
+.aActive {
+    color: #791C17;
+    background: white;
+    width: 10%;
+    text-align: center;
+}
+
+/* page content */
+
+.container {
+    /* min-height: 100%; */
+    margin-top: 290px;
+    margin-bottom: 50px;
+    /* min-height: 56.95vh; */
+    min-height: 59.5vh;
+}
+
+.bContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.eqForm, .rInForm, .aAddForm, .aInForm, .aOutForm, .aRemoveForm, .rOutForm, .reports, .permissionContainer, .addPer, .changePer, .removePer, .main, .damagedForm, .lostForm, .databaseContainer, .rdamagedForm {
+    margin-left: auto;
+    margin-right: auto;
+    border: black solid 5px;
+}
+
+.main {
+    height: 500px;
+    width: 800px;
+    margin-top: 20px;
+}
+
+.mainForm {
+    display:flex;
+   flex-wrap:wrap;
+}
+
+.mainForm button {
+    margin-top: 30px;
+    margin-left: 45px;
+    height: 200px;
+    width: 200px;
+}
+
+.eqForm {
+    width: 800px;
+    height: 500px;
+}
+
+.eqButtons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eqButtons button {
+    margin-top: 30px;
+    margin-left: 45px;
+    height: 200px;
+    width: 200px;
+}
+
+.rInForm {
+    width: 600px;
+    height: 230px;
+    padding-left: 20px;
+}
+
+.rInButtons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.aAddForm {
+    width: 600px;
+    height: 350px;
+    padding-left: 20px;
+}
+
+.aAddButtons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.aInForm {
+    width: 600px;
+    height: 350px;
+    padding-left: 20px;
+}
+
+.aOutForm {
+    width: 600px;
+    height: 450px;
+    padding-left: 20px;
+}
+
+.aRemoveForm {
+    width: 600px;
+    height: 360px;
+    padding-left: 20px;
+}
+
+.rOutForm {
+    width: 600px;
+    height: 390px;
+    padding-left: 20px;
+}
+
+.reports {
+    height: 450px;
+    width: 800px;
+    border: solid black 5px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.reportButtons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reportButtons button {
+    height: 100px;
+    width: 200px;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.permissionContainer {
+    height: 260px;
+    width: 800px;
+}
+
+.databaseContainer {
+    height: 260px;
+    width: 542px;
+}
+
+.permissionButtons, .databaseButtons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.permissionButtons button, .databaseButtons button {
+    height: 200px;
+    width: 200px;
+    margin-top: 23px;
+    margin-left: 43px;
+}
+
+.addPer {
+    width: 650px;
+    height: 440px;
+    padding-left: 20px;
+}
+
+.changePer {
+    width: 600px;
+    height: 295px;
+    padding-left: 20px;
+}
+
+.removePer {
+    width: 600px;
+    height: 215px;
+    padding-left: 20px;
+}
+
+.damagedForm {
+    width: 650px;
+    height: 400px;
+    padding-left: 20px;
+}
+
+.rdamagedForm {
+    width: 650px;
+    height: 350px;
+    padding-left: 20px;
+}
+
+.lostForm {
+    width: 600px;
+    height: 340px;
+    padding-left: 20px;
+}
+
+.addPerForm, .changePerForm, .removePerForm, .damagedButtons, .lostButtons {
+    margin-top: 20px;
+}
+
+.two, .three, .four, .five {
+    padding-top: 30px;
+}
+
+h4 {
+	color: red;
+}
+
+/* reports */
+.report_top_group {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    margin-top: -50px;
+}
+
+#downloadBttn {
+    padding-top: 27px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    margin-bottom: 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    vertical-align: center;
+}
+
+th {
+    text-align: left;
+    height: 37px;
+    padding: 5px;
+    background: #D6D6D6;
+    color: #791C17;
+    font-size: 20px;
+}
+
+td {
+    text-align: right;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* barcode scanner */
+#interactive.viewport {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: left;
+    /* left: 20px; */
+}
+
+#interactive.viewport > canvas, #interactive.viewport > video {
+    max-width: 100%;
+    width: 77%;
+}
+
+canvas.drawing, canvas.drawingBuffer {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* buttons */
+.sButton {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.sButtons {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.b2 {
+    padding-left: 50px;
+}
+
+.b2d, .b3d {
+    padding-left: 25px;
+}
+
+.bttn {
+    background-color: #791C17;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: none;
+    height: 30px;
+}
+/* all buttons were created in ADOBE ILLUSTRATOR by Amanda Sill*/
+/* all icons are fair use - most were pulled from pngtree.com */
+button#close-CSS1 {
+    background: transparent url("../buttons/checkout_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS2 {
+    background: transparent url("../buttons/checkin_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS3 {
+    background: transparent url("../buttons/reports_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS4 {
+    background: transparent url("../buttons/lost_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS5 {
+    background: transparent url("../buttons/damaged_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS6 {
+    background: transparent url("../buttons/database_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button.close-CSS7 {
+    background: transparent url("../buttons/radio_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button.close-CSS8 {
+    background: transparent url("../buttons/polo_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button.close-CSS9 {
+    background: transparent url("../buttons/vest_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button.close-CSS10 {
+    background: transparent url("../buttons/jacket_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button.close-CSS11 {
+    background: transparent url("../buttons/blazer_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS12 {
+    background: transparent url("../buttons/reports/inventory.png") no-repeat center center;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS13 {
+    background: transparent url("../buttons/reports/chkd_eq.png") no-repeat center center;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS14 {
+    background: transparent url("../buttons/reports/chkd_emp.png") no-repeat center center;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS15 {
+    background: transparent url("../buttons/reports/chkd_loc.png") no-repeat center center;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS16 {
+    background: transparent url("../buttons/reports/not_chkd.png") no-repeat center center;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS17 {
+    background: transparent url("../buttons/reports/history.png") no-repeat center center;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS18 {
+    background: transparent url("../buttons/reports/lost_eq.png") no-repeat center center;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS19 {
+    background: transparent url("../buttons/reports/damaged_eq.png") no-repeat center center;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS20 {
+    background: transparent url("../buttons/reports/out.png") no-repeat center center;
+    background-size: 100%;
+    height: 100px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS21 {
+    background: transparent url("../buttons/addPer_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS22 {
+    background: transparent url("../buttons/changePer_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS23 {
+    background: transparent url("../buttons/removePer_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS24 {
+    background: transparent url("../buttons/addEq_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#close-CSS25 {
+    background: transparent url("../buttons/removeEq_icon.png") no-repeat center center;
+    background-size: 100%;
+    height: 200px;
+    width: 200px;
+    border: none;
+}
+
+button#sign_in_button {
+    background: transparent url("../buttons/small/signin_button.png") no-repeat center center;
+    background-size: 100%;
+    height: 50px;
+    width: 150px;
+    border: none;
+}
+
+/* footer */
+.login_footer {
+    background: #FFFFFF;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* font-size: 16px; */
+    display: flex;
+    justify-content: flex-start;
+}
+
+#kala_login {
+    height: 30px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    background: #791C17;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width : 992px) {
+    .menu-icon {
+        display: inline;
+    	position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 11000;
+    }
+
+    .menu-icon {
+        color: white;
+    }
+
+    .menu-icon-title {
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+
+    .closebtn {
+        display: block;
+    }
+
+    .nav_ul {
+        display:block;
+    }
+
+    nav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 200;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 120000;
+    }
+
+    nav a {
+        /* padding: 8px 8px 8px 8px; */
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    nav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    a.active {
+        color: black;
+        background: white;
+        height: 190%;
+        width: 111%;
+        text-align: left;
+        padding-left: 2px;
+        text-decoration: none;
+    }
+
+    #main {
+    transition: margin-left .5s;
+    min-height: 100%; /*89.4vh*/
+    padding-bottom: 20;
+    /*padding: 20px;*/
+    }
+
+    .container {
+        margin-top: 200px;
+        margin-bottom: 50px;
+        min-height: /*100%;*/ 71.3vh;
+        /* max-height: 34.4vh; */
+    }
+
+    .bContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main, .eqForm, .reports {
+        height: 715px;
+        width: 542px;
+    }
+
+    .permissionContainer {
+        height: 475px;
+        width: 542px;
+    }
+}
